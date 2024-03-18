@@ -1,0 +1,113 @@
+{
+	"name": "blob_salesOrderHeader",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "SalesOrderHeader.csv",
+				"container": "snowparktest"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SALESORDERID",
+				"type": "String"
+			},
+			{
+				"name": "REVISIONNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "ORDERDATE",
+				"type": "String"
+			},
+			{
+				"name": "DUEDATE",
+				"type": "String"
+			},
+			{
+				"name": "SHIPDATE",
+				"type": "String"
+			},
+			{
+				"name": "STATUS",
+				"type": "String"
+			},
+			{
+				"name": "ONLINEORDERFLAG",
+				"type": "String"
+			},
+			{
+				"name": "SALESORDERNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "PURCHASEORDERNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "ACCOUNTNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "CUSTOMERID",
+				"type": "String"
+			},
+			{
+				"name": "SHIPTOADDRESSID",
+				"type": "String"
+			},
+			{
+				"name": "BILLTOADDRESSID",
+				"type": "String"
+			},
+			{
+				"name": "SHIPMETHOD",
+				"type": "String"
+			},
+			{
+				"name": "CREDITCARDAPPROVALCODE",
+				"type": "String"
+			},
+			{
+				"name": "SUBTOTAL",
+				"type": "String"
+			},
+			{
+				"name": "TAXAMT",
+				"type": "String"
+			},
+			{
+				"name": "FREIGHT",
+				"type": "String"
+			},
+			{
+				"name": "TOTALDUE",
+				"type": "String"
+			},
+			{
+				"name": "COMMENT",
+				"type": "String"
+			},
+			{
+				"name": "ROWGUID",
+				"type": "String"
+			},
+			{
+				"name": "MODIFIEDDATE",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,17 @@
+{
+	"name": "Snowflake_Product",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Snowflake1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SnowflakeV2Table",
+		"schema": [],
+		"typeProperties": {
+			"schema": "RAW",
+			"table": "PRODUCT"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

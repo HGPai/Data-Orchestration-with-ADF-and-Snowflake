@@ -1,0 +1,9 @@
+{
+	"name": "adftestsnowflake",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "e410c1c9-264e-44f6-85eb-15005f0116c4",
+		"tenantId": "786898aa-1166-4314-ad8d-a8ca2c97e248"
+	}
+}

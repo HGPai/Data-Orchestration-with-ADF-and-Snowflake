@@ -1,0 +1,61 @@
+{
+	"name": "blob_salesDetails",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "SalesOrderDetail.csv",
+				"container": "snowparktest"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "SALESORDERID",
+				"type": "String"
+			},
+			{
+				"name": "SALESORDERDETAILID",
+				"type": "String"
+			},
+			{
+				"name": "ORDERQTY",
+				"type": "String"
+			},
+			{
+				"name": "PRODUCTID",
+				"type": "String"
+			},
+			{
+				"name": "UNITPRICE",
+				"type": "String"
+			},
+			{
+				"name": "UNITPRICEDISCOUNT",
+				"type": "String"
+			},
+			{
+				"name": "LINETOTAL",
+				"type": "String"
+			},
+			{
+				"name": "ROWGUID",
+				"type": "String"
+			},
+			{
+				"name": "MODIFIEDDATE",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

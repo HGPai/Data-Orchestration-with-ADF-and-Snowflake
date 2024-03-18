@@ -1,0 +1,93 @@
+{
+	"name": "blob_Products",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Product.csv",
+				"container": "snowparktest"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "PRODUCTID",
+				"type": "String"
+			},
+			{
+				"name": "NAME",
+				"type": "String"
+			},
+			{
+				"name": "PRODUCTNUMBER",
+				"type": "String"
+			},
+			{
+				"name": "COLOR",
+				"type": "String"
+			},
+			{
+				"name": "STANDARDCOST",
+				"type": "String"
+			},
+			{
+				"name": "LISTPRICE",
+				"type": "String"
+			},
+			{
+				"name": "SIZE",
+				"type": "String"
+			},
+			{
+				"name": "WEIGHT",
+				"type": "String"
+			},
+			{
+				"name": "PRODUCTCATEGORYID",
+				"type": "String"
+			},
+			{
+				"name": "PRODUCTMODELID",
+				"type": "String"
+			},
+			{
+				"name": "SELLSTARTDATE",
+				"type": "String"
+			},
+			{
+				"name": "SELLENDDATE",
+				"type": "String"
+			},
+			{
+				"name": "DISCONTINUEDDATE",
+				"type": "String"
+			},
+			{
+				"name": "THUMBNAILPHOTO",
+				"type": "String"
+			},
+			{
+				"name": "THUMBNAILPHOTOFILENAME",
+				"type": "String"
+			},
+			{
+				"name": "ROWGUID",
+				"type": "String"
+			},
+			{
+				"name": "MODIFIEDDATE",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
